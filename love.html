@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Valentine ❤️</title>
+    <link rel="stylesheet" href="love.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<audio id="bg-music" loop>
+    <source src="../assstes/audio/arctic_monkey_-_i_wanna_be_yours_(mp3.pm).mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    document.addEventListener("click", function () {
+        const music = document.getElementById("bg-music");
+        music.play();
+    }, { once: true });
+</script>
+    <!-- ================= POPUP ================= -->
+    <div id="messagePopup">
+        <div class="card" style="display:block; max-width:350px;">
+            <h2>🎉 Yayyy 💖</h2>
+            <p>I knew it ❤️<br>You just made my heart smile forever 💕</p>
+            <button class="btn-main" onclick="closePopup()">See Our Story 📖</button>
+        </div>
+    </div>
+
+    <!-- ================= PAGE 1 ================= -->
+    <div class="card" id="page1">
+        <h1>💖 Hey Love 💖</h1>
+        <p>Will you be my Valentine? 💌</p>
+        <div style="height:160px; margin-top:50px;">
+            <button id="yesBtn" class="btn-main" onclick="showLoveMessage()">Yes ❤️</button>
+            <button id="noBtn" onclick="moveNo()">No 💔</button>
+        </div>
+    </div>
+
+    <!-- ================= PAGE 2 STORY ================= -->
+    <div class="card" id="page2">
+        <h1>📖 Our Love Story</h1>
+        <p>Click each step of our journey 💕</p>
+
+        <div class="boxes">
+            <div class="stage-box" onclick="show('proposal')">
+                <div class="box"><img src="../assstes/photo/Photos-3-001/her34 (7).jpg" alt="Proposal"></div>
+                <div class="label">Proposal</div>
+            </div>
+
+            <div class="stage-box" onclick="show('together')">
+                <div class="box"><img src="../assstes/photo/Photos-3-001/love (2).jpeg" alt="Together"></div>
+                <div class="label">Together</div>
+            </div>
+
+            <div class="stage-box" onclick="show('marriage')">
+                <div class="box"><img src="../assstes/photo/Photos-3-001/beauty.jpeg" alt="Future"></div>
+                <div class="label">Future</div>
+            </div>
+
+            <div class="stage-box" onclick="show('galleryPage')">
+                <div class="box"><img src="../assstes/photo/Photos-3-001/mine.jpg" alt="Gallery"></div>
+                <div class="label">Gallery 📸</div>
+            </div>
+        </div>
+
+        <button class="btn-main" style="margin-top:20px;" onclick="show('quizPage')">
+            Next: Little Quiz 💌
+        </button>
+    </div>
+
+    <!-- ================= GALLERY ================= -->
+    <div class="card" id="galleryPage">
+        <h1>📸 Our Memories</h1>
+        <div class="photo-grid">
+            <img src="../assstes/photo/Photos-3-001/love.jpeg" alt="Memories">
+            <img src="../assstes/photo/Photos-3-001/love (2).jpeg" alt="Memories">
+            <img src="../assstes/photo/Photos-3-001/love (3).jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love01.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love2.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love02.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love3.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love03.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love04.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love04.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love5.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love05.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love6.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love06.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love07.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love08.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love09.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love10.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love11.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love12.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love13.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love14.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love15.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love16.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love17.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love18.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love19.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love20.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love21.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love22.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love24.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love24.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love25.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love26.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love27.jpeg" alt="Memories"> 
+            <img src="../assstes/photo/photos-3-001/love28.jpeg" alt="Memories"> 
+            <img src="../assstes/photo/photos-3-001/love29.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love30.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love31.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love32.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love33.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love34.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/love35.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her01.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her02jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her03.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her04.HEIC" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her05.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her06.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her07.webp" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her08.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her09.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her10.JPG" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her11.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her12.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her13.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her14.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her15.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her16.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her17.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her18.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her19.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her20.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her21.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her22.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her23.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her24.jpeg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her25.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her26.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her27.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her28.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her29.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her30.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her31.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her32.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her33.jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her34 (1).jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her34 (2).jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her34 (3).jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her34 (4).jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her34 (5).jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her34 (6).jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her34 (7).jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her34 (8).jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her34 (9).jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her34 (10).jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her34 (11).jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her34 (12).jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her34 (13).jpg" alt="Memories">
+            <img src="../assstes/photo/photos-3-001/her34.jpg" alt="Memories">
+            <img src="../assstes/photo/Photos-3-001/both02.jpeg" alt="Memories">
+            <img src="../assstes/photo/Photos-3-001/FB_IMG_1631286255546.jpg" alt="">
+            <img src="../assstes/photo/Photos-3-001/WhatsApp Image 2026-02-10 at 6.47.57 AM.jpeg" alt="">
+
+        </div>
+        <p>Every photo whispers "us" ❤️</p>
+        <div id="fullscreen">
+        <span id="closeBtn">✖</span>
+        <img id="fullscreenImg">
+        </div>
+        <button class="btn-back" onclick="back()">⬅ Back</button>
+    </div>
+
+    <!-- ================= PROPOSAL ================= -->
+    <div class="card" id="proposal">
+        <h1>💍 My Proposal</h1>
+        <div class="auto-scroll-box">
+            <div class="auto-scroll-track">
+                <img src="../assstes/photo/Photos-3-001/her14.jpeg" alt="Proposal 1">
+                <img src="../assstes/photo/Photos-3-001/bunty01.jpg" alt="Proposal 4">
+                <img src="../assstes/photo/Photos-3-001/propose.jpeg" alt="Proposal 3">
+                <img src="../assstes/photo/Photos-3-001/bunty.jpg" alt="proposal 2">
+            </div>
+        </div>
+        <p>Maybe I’m not the richest man, <br>
+           Maybe I’m not the most perfect man…<br>
+           But I swear on my heart,<br>
+           No one will ever love you the way I do. <br>
+           Not today, not tomorrow, not ever. <br>
+           Give me one chance…<br>
+           I’ll make you the happiest woman in the world <br>
+           The moment my heart chose you forever 💍</p>
+        <button class="btn-back" onclick="back()">⬅ Back</button>
+    </div>
+
+    <!-- ================= TOGETHER ================= -->
+    <div class="card" id="together">
+        <h1>🤝 Together</h1>
+        <div class="auto-scroll-box">
+            <div class="auto-scroll-track">
+                <img src="../assstes/photo/Photos-3-001/mine.jpg" alt="Together 1">
+                <img src="../assstes/photo/Photos-3-001/love03.jpeg" alt="Together 2">
+                <img src="../assstes/photo/Photos-3-001/love35.jpg" alt="Together 3">
+                <img src="../assstes/photo/Photos-3-001/love18.jpeg" alt="Together 4">
+            </div>
+        </div>
+        <p> One day our hair will turn grey… <br>
+Our hands will wrinkle… <br>
+But I promise you this — <br>
+I will still hold your hand <br>
+The same way I do today. <br>
+With excitement. <br>
+With love. <br>
+With gratitude. <br>
+Thank you for choosing me… <br>
+For choosing us… <br>
+For choosing forever <br>
+ Every day with you feels like home ✨ <br>
+“Together isn’t just a word anymore… <br>
+It’s our story. <br>
+And this is only the beginning ❤️”</p>
+        <button class="btn-back" onclick="back()">⬅ Back</button>
+    </div>
+
+    <!-- ================= FUTURE ================= -->
+    <div class="card" id="marriage">
+        <h1>👰 Our Future</h1>
+        <div class="auto-scroll-box">
+            <div class="auto-scroll-track">
+                <img src="../assstes/photo/Photos-3-001/shiii.jpg"alt="Future 1">
+                <img src="../assstes/photo/Photos-3-001/buntyyyy002.jpg" alt="Future 2">
+                <img src="../assstes/photo/Photos-3-001/shiii02.jpg" alt="Future 3">
+                <img src="../assstes/photo/Photos-3-001/buntyy01.jpg" alt="Future 4">
+            </div>
+        </div>
+        <p> I don’t want to love you for a season. <br>
+I don’t want to love you for a few years. <br>
+I want to wake up next to you when our hair turns grey. <br>
+I want to hold your hand when our hands start to shake. <br>
+I want to look at you after 40 years and still say — <br>
+‘I would choose you again.’ <br>
+Will you marry me and make our forever official? <br>
+            No matter what, I'll always choose you 💖</p>
+        <button class="btn-back" onclick="back()">⬅ Back</button>
+    </div>
+
+    <!-- ================= QUIZ ================= -->
+    <div class="card" id="quizPage">
+  <h1>💖 Valentine Quiz</h1>
+  <p>Answer honestly… from your heart ❤️</p>
+
+  <div class="question-card" data-q="Q1: What do I love the most?">
+    <div class="question">Q1️⃣ What do I love the most?</div>
+    <div class="options">
+      <button onclick="selectOption(this)">❤️ You</button>
+      <button onclick="selectOption(this)">🍫 Chocolate</button>
+      <button onclick="selectOption(this)">😴 Sleep</button>
+    </div>
+    <textarea placeholder="Write from your heart ❤️"></textarea>
+  </div>
+
+  <div class="question-card" data-q="Q2: Our favorite moment?">
+    <div class="question">Q2️⃣ Our favorite moment?</div>
+    <div class="options">
+      <button onclick="selectOption(this)">🌧️ First meeting</button>
+      <button onclick="selectOption(this)">☕ Long talks</button>
+      <button onclick="selectOption(this)">💕 Every moment</button>
+    </div>
+    <textarea placeholder="Your memory 💕"></textarea>
+  </div>
+
+  <div class="question-card" data-q="Q3: One word for us?">
+    <div class="question">Q3️⃣ One word that describes us?</div>
+    <div class="options">
+      <button onclick="selectOption(this)">💎 Perfect</button>
+      <button onclick="selectOption(this)">💞 Soulmates</button>
+      <button onclick="selectOption(this)">🌈 Lucky</button>
+    </div>
+    <textarea placeholder="Tell me why ❤️"></textarea>
+  </div>
+
+  <div class="question-card" data-q="Q4: What makes me smile instantly?">
+    <div class="question">Q4️⃣ What makes me smile instantly?</div>
+    <div class="options">
+      <button onclick="selectOption(this)">😊 Your message</button>
+      <button onclick="selectOption(this)">🎵 Music</button>
+      <button onclick="selectOption(this)">🍔 Food</button>
+    </div>
+    <textarea placeholder="Something sweet 💖"></textarea>
+  </div>
+
+  <div class="question-card" data-q="Q5: What do I want forever?">
+    <div class="question">Q5️⃣ What do I want with you forever?</div>
+    <div class="options">
+      <button onclick="selectOption(this)">✈️ Travel</button>
+      <button onclick="selectOption(this)">🏠 Peaceful life</button>
+      <button onclick="selectOption(this)">🌍 Everything</button>
+    </div>
+    <textarea placeholder="Forever means… ❤️"></textarea>
+  </div>
+
+  <div class="question-card" data-q="Q6: One wish">
+    <div class="question">Q6️⃣ If I had one wish…</div>
+    <div class="options">
+      <button onclick="selectOption(this)">🎁 Gifts</button>
+      <button onclick="selectOption(this)">💕 Lifetime with you</button>
+      <button onclick="selectOption(this)">🌙 Fame</button>
+    </div>
+    <textarea placeholder="Your wish 💫"></textarea>
+  </div>
+
+  <div class="question-card" data-q="Q7: Will you wait for me?">
+    <div class="question">Q7️⃣ Will you wait for me until I achieve my dreams?</div>
+    <div class="options">
+      <button onclick="selectOption(this)">💖 Yes, always</button>
+      <button onclick="selectOption(this)">⏳ No matter how long</button>
+      <button onclick="selectOption(this)">❤️ I believe in you</button>
+    </div>
+    <textarea placeholder="This means a lot ❤️"></textarea>
+  </div>
+
+  <button class="btn-main" onclick="submitToWA()">Final Submit to WhatsApp 📱</button>
+</div>
+
+
+    <script src="love.js"></script>
+    
+</body>
+</html>
